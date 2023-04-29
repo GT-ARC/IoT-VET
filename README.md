@@ -8,11 +8,13 @@ The modules were curated by Dr. Fikret Sivrikaya and co-implemented with student
 
 ### Smart Factory Scenario and Training Module Index
 
-10 training modules in the domain of factories are designed as an interconnected set of hands-on exercises. The individual modules can be developed by different students or student groups in a class to collectively realize a "smart factory" IoT scenario, as depicted in Figure 1.
+10 training modules in the domain of factories are designed as an interconnected set of hands-on exercises. The individual modules can be developed by different students or student groups in a class to collectively realize a "smart factory" IoT scenario, as depicted in the figure.
+
+<img align="right" src="figures/Module-Index-Figure1.JPG" width="520">
 
 In our scenario, there is a **warehouse**, where different parts are delivered and stored. These parts have specific temperature and humidity requirements for long-term storage. Therefore, sensors are deployed in the warehouse to monitor the environment.
 
-The **production facilities** in the smart factory include conveyor belts and robotic systems for production. It is also supported by automated systems to pick up and deliver the required parts from the warehouses into the production facilities. For simplification, each product in our scenario is a combination of certain parts, as shown in Figure 1.
+The **production facilities** in the smart factory include conveyor belts and robotic systems for production. It is also supported by automated systems to pick up and deliver the required parts from the warehouses into the production facilities. For simplification, each product in our scenario is a combination of certain parts, as shown in the figure.
 
 The **product stock** serves as a warehouse for finished products and facilitates their automated delivery based on sales orders. As in the parts warehouses, the product stock is also equipped with temperature and humidity sensors to ensure proper storage conditions for the products.
 
