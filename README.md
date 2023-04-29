@@ -23,7 +23,7 @@ The first two training modules in this collection are common for all students an
 
 ### Index of Training Modules
 
-1. **Docker as a Virtualization Platform for Cloud and Edge:** This module aims to introduce one of the virtualization concepts, containers, as an enabler of cloud and edge computing. It introduces Docker as a container technology and provides hands-on experience on the creation and management of containerized applications in the Docker environment, focusing on Node-RED as an example application running in Docker. 
+1. [Docker as a Virtualization Platform for Cloud and Edge:](modules/IoT-Factory-GTARC-01-Docker.pdf) This module aims to introduce one of the virtualization concepts, containers, as an enabler of cloud and edge computing. It introduces Docker as a container technology and provides hands-on experience on the creation and management of containerized applications in the Docker environment, focusing on Node-RED as an example application running in Docker. 
     - Getting started with Docker
     - Installing an application as a Docker container 
     - Running & configuring a container/app from an existing local image
