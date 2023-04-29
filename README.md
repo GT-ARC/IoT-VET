@@ -23,15 +23,15 @@ The first two training modules in this collection are common for all students an
 
 ### Index of Training Modules
 
-1. [Docker as a Virtualization Platform for Cloud and Edge:](modules/IoT-Factory-GTARC-01-Docker.pdf) This module aims to introduce one of the virtualization concepts, containers, as an enabler of cloud and edge computing. It introduces Docker as a container technology and provides hands-on experience on the creation and management of containerized applications in the Docker environment, focusing on Node-RED as an example application running in Docker. 
+1. [**Docker as a Virtualization Platform for Cloud and Edge:**](modules/IoT-Factory-GTARC-01-Docker.pdf) This module aims to introduce one of the virtualization concepts, containers, as an enabler of cloud and edge computing. It introduces Docker as a container technology and provides hands-on experience on the creation and management of containerized applications in the Docker environment, focusing on Node-RED as an example application running in Docker. 
     - Getting started with Docker
     - Installing an application as a Docker container 
     - Running & configuring a container/app from an existing local image
-2. **Node-RED as an IoT Application Development Tool:** This module aims to provide basic understanding of Node-RED as a visual flow programming tool that can support IoT application design and development.
+2. [**Node-RED as an IoT Application Development Tool:**](modules/IoT-Factory-GTARC-02-NodeRed.pdf) This module aims to provide basic understanding of Node-RED as a visual flow programming tool that can support IoT application design and development.
     - Installing and running Node-RED (as a docker container)
     - "Nodes" and “Flows” in Node-RED
     - Creating your first flow / application in Node-RED
-3. **Implementing the Parts Warehouse Sensors:** This module implements simulated temperature and humidity sensors to keep track of the environmental conditions in the parts warehouse.
+3. [**Implementing the Parts Warehouse Sensors:**](modules/IoT-Factory-GTARC-03-WarehouseSensors.pdf) This module implements simulated temperature and humidity sensors to keep track of the environmental conditions in the parts warehouse.
     - Using the inject and function nodes in Node-RED to create virtual sensors
     - Generating random numbers to emulate sensor data
     - Using an MQTT-out node to send the sensor data to a remote MQTT Broker
