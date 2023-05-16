@@ -1,1 +1,166 @@
-[{"id":"6160a7c5.f57008","type":"tab","label":"Warehouse Sensors","disabled":false,"info":"A simple flow that emulates/simulates a temperatur sensor by generating random readings between 25-30 °C every second.\n"},{"id":"5965b638.eade58","type":"inject","z":"6160a7c5.f57008","name":"inject","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"5","crontab":"","once":true,"onceDelay":"1","topic":"","payload":"","payloadType":"date","x":110,"y":80,"wires":[["acffde8f.84a5d"]]},{"id":"acffde8f.84a5d","type":"function","z":"6160a7c5.f57008","name":"Temperature Sensor","func":"var min = 16;\nvar max = 20.5;\n\nvar randomNumber = Math.random() * (max - min) + min;\nmsg.payload = Math.round(randomNumber*10.0)/10.0;\nreturn msg;\n","outputs":1,"noerr":0,"initialize":"","finalize":"","libs":[],"x":335.99999237060547,"y":80.00000381469727,"wires":[["9da8c8b3.960628"]]},{"id":"9da8c8b3.960628","type":"mqtt out","z":"6160a7c5.f57008","name":"MQTT-temp","topic":"warehouse/temp","qos":"0","retain":"false","respTopic":"","contentType":"","userProps":"","correl":"","expiry":"","broker":"997bd5d4.dfe698","x":590,"y":80,"wires":[]},{"id":"67a8bcd5.a40ad4","type":"inject","z":"6160a7c5.f57008","name":"inject","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"5","crontab":"","once":true,"onceDelay":"3","topic":"","payload":"","payloadType":"date","x":110,"y":160,"wires":[["973e948d.00cc98"]]},{"id":"973e948d.00cc98","type":"function","z":"6160a7c5.f57008","name":"Humidity Sensor","func":"var min = 30;\nvar max = 65;\n\nvar randomNumber = Math.random() * (max - min) + min;\nmsg.payload = Math.round(randomNumber*10.0)/10.0;\nreturn msg;\n","outputs":1,"noerr":0,"initialize":"","finalize":"","libs":[],"x":340,"y":160,"wires":[["6659d32e.38ac5c"]]},{"id":"6659d32e.38ac5c","type":"mqtt out","z":"6160a7c5.f57008","name":"MQTT-humidity","topic":"warehouse/humidity","qos":"","retain":"","respTopic":"","contentType":"","userProps":"","correl":"","expiry":"","broker":"997bd5d4.dfe698","x":580,"y":160,"wires":[]},{"id":"997bd5d4.dfe698","type":"mqtt-broker","name":"Mosquitto Test Server","broker":"test.mosquitto.org","port":"1883","clientid":"","usetls":false,"protocolVersion":"4","keepalive":"60","cleansession":true,"birthTopic":"","birthQos":"0","birthPayload":"","birthMsg":{},"closeTopic":"","closeQos":"0","closePayload":"","closeMsg":{},"willTopic":"","willQos":"0","willPayload":"","willMsg":{},"sessionExpiry":""}]
+[
+    {
+        "id": "6160a7c5.f57008",
+        "type": "tab",
+        "label": "Warehouse Sensors",
+        "disabled": false,
+        "info": "A simple flow that emulates/simulates a temperatur sensor by generating random readings between 25-30 °C every second.\n"
+    },
+    {
+        "id": "5965b638.eade58",
+        "type": "inject",
+        "z": "6160a7c5.f57008",
+        "name": "inject",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "acffde8f.84a5d"
+            ]
+        ]
+    },
+    {
+        "id": "acffde8f.84a5d",
+        "type": "function",
+        "z": "6160a7c5.f57008",
+        "name": "Temperature Sensor",
+        "func": "var min = 16;\nvar max = 20.5;\n\nvar randomNumber = Math.random() * (max - min) + min;\nmsg.payload = Math.round(randomNumber*10.0)/10.0;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 335.99999237060547,
+        "y": 80.00000381469727,
+        "wires": [
+            [
+                "9da8c8b3.960628"
+            ]
+        ]
+    },
+    {
+        "id": "9da8c8b3.960628",
+        "type": "mqtt out",
+        "z": "6160a7c5.f57008",
+        "name": "MQTT-temp",
+        "topic": "warehouse/temp",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "997bd5d4.dfe698",
+        "x": 590,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "67a8bcd5.a40ad4",
+        "type": "inject",
+        "z": "6160a7c5.f57008",
+        "name": "inject",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "3",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "973e948d.00cc98"
+            ]
+        ]
+    },
+    {
+        "id": "973e948d.00cc98",
+        "type": "function",
+        "z": "6160a7c5.f57008",
+        "name": "Humidity Sensor",
+        "func": "var min = 30;\nvar max = 65;\n\nvar randomNumber = Math.random() * (max - min) + min;\nmsg.payload = Math.round(randomNumber*10.0)/10.0;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 160,
+        "wires": [
+            [
+                "6659d32e.38ac5c"
+            ]
+        ]
+    },
+    {
+        "id": "6659d32e.38ac5c",
+        "type": "mqtt out",
+        "z": "6160a7c5.f57008",
+        "name": "MQTT-humidity",
+        "topic": "warehouse/humidity",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "997bd5d4.dfe698",
+        "x": 580,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "997bd5d4.dfe698",
+        "type": "mqtt-broker",
+        "name": "Mosquitto Test Server",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    }
+]
