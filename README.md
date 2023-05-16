@@ -35,3 +35,6 @@ The first two training modules in this collection are common for all students an
     - Using the inject and function nodes in Node-RED to create virtual sensors
     - Generating random numbers to emulate sensor data
     - Using an MQTT-out node to send the sensor data to a remote MQTT Broker
+4. [**Implementing the Product Stock Sensors:**](modules/IoT-Factory-GTARC-04-Product%20Stock%20Sensors.pdf) Similar to the previous module, this module implements a pair of temperature and humidity sensors, but instead of creating them from scratch, we will see how to create a copy of the warehouse sensors and edit them easily for the product stock.
+    - Exporting and importing flows in Node-RED
+    - Editing the properties of existing flows and nodes
