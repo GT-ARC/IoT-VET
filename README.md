@@ -42,4 +42,10 @@ The first two training modules in this collection are common for all students an
     - Reading sensor data by subscribing to an MQTT topic
     - Plotting sensor data by using node-red-dashboard nodes
     - Understanding and adapting the user interface (UI) layout in Node-RED
-
+6. [**Implementing an Inventory Service API – GET Method:**](modules/IoT-Factory-GTARC-06-InventoryServiceAPI-GETmethod.pdf) This module introduces how to implement an inventory database service in Node-RED and to develop a Web API for reading the current inventory/stock amount for any given part or product (e.g., "retrieve the number of part A units available in the warehouse").
+    - Using “flow variables” in Node-RED to store values persistently across different nodes
+    - Learning to implement a web service with a REST API
+    - Implementing a GET method for external software modules to read the inventory/stock states
+7. [**7.	Implementing an Inventory Service API – POST Method:**](modules/IoT-Factory-GTARC-07-InventoryServiceAPI-POSTmethod.pdf) This module continues with the implementation of an inventory database service by developing a Web API for updating the inventory/stock for parts and products (e.g., "add two more units of Product 1 to the stock").
+    - Implementing a POST method for external software modules to update the inventory/stock states
+    - Observing the context data and variable values to test the application functionality
