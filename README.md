@@ -38,3 +38,8 @@ The first two training modules in this collection are common for all students an
 4. [**Implementing the Product Stock Sensors:**](modules/IoT-Factory-GTARC-04-Product%20Stock%20Sensors.pdf) Similar to the previous module, this module implements a pair of temperature and humidity sensors, but instead of creating them from scratch, we will see how to create a copy of the warehouse sensors and edit them easily for the product stock.
     - Exporting and importing flows in Node-RED
     - Editing the properties of existing flows and nodes
+5. [**Monitoring and Visualization of Sensor Data:**](modules/IoT-Factory-GTARC-05-Sensor%20Monitoring%20Dashboard.pdf) This module implements a visual dashboard to monitor the sensor data from the parts warehouse and the product stock.
+    - Reading sensor data by subscribing to an MQTT topic
+    - Plotting sensor data by using node-red-dashboard nodes
+    - Understanding and adapting the user interface (UI) layout in Node-RED
+
