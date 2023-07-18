@@ -46,6 +46,6 @@ The first two training modules in this collection are common for all students an
     - Using “flow variables” in Node-RED to store values persistently across different nodes
     - Learning to implement a web service with a REST API
     - Implementing a GET method for external software modules to read the inventory/stock states
-7. [**7.	Implementing an Inventory Service API – POST Method:**](modules/IoT-Factory-GTARC-07-InventoryServiceAPI-POSTmethod.pdf) This module continues with the implementation of an inventory database service by developing a Web API for updating the inventory/stock for parts and products (e.g., "add two more units of Product 1 to the stock").
+7. [**Implementing an Inventory Service API – POST Method:**](modules/IoT-Factory-GTARC-07-InventoryServiceAPI-POSTmethod.pdf) This module continues with the implementation of an inventory database service by developing a Web API for updating the inventory/stock for parts and products (e.g., "add two more units of Product 1 to the stock").
     - Implementing a POST method for external software modules to update the inventory/stock states
     - Observing the context data and variable values to test the application functionality
