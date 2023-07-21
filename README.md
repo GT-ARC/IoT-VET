@@ -8,7 +8,7 @@ The modules were curated by Dr. Fikret Sivrikaya and co-implemented with student
 
 ### Smart Factory Scenario
 
-10 training modules in the domain of factories are designed as an interconnected set of hands-on exercises. The individual modules can be developed by different students or student groups in a class to collectively realize a "smart factory" IoT scenario, as depicted in the figure.
+*10 training modules* are designed as an interconnected set of hands-on exercises in the domain of factories. The individual modules can be developed by different students or student groups in a class to collectively realize a "smart factory" IoT scenario, as depicted in the following figure.
 
 <img align="right" src="figures/smart_factory_scenario.jpg" width="500">
 
@@ -49,3 +49,6 @@ The first two training modules in this collection are common for all students an
 7. [**Implementing an Inventory Service API – POST Method:**](modules/IoT-Factory-GTARC-07-InventoryServiceAPI-POSTmethod.pdf) This module continues with the implementation of an inventory database service by developing a Web API for updating the inventory/stock for parts and products (e.g., "add two more units of Product 1 to the stock").
     - Implementing a POST method for external software modules to update the inventory/stock states
     - Observing the context data and variable values to test the application functionality
+8. [**Simulation of Parts Delivery and Product Sales:**](modules/IoT-Factory-GTARC-08-Simulated-Delivery-Sales.pdf) This module implements a web-based UI to simulate the delivery of parts to the warehouse and the sale of products from the available product stock. It utilizes the inventory/stock API of the web service from the last two modules.
+    - Implementing a client that uses the POST method of the web service API
+    - Using forms in Node-RED to retrieve and process user input
