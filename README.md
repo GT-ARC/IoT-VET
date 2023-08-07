@@ -52,3 +52,9 @@ The first two training modules in this collection are common for all students an
 8. [**Simulation of Parts Delivery and Product Sales:**](modules/IoT-Factory-GTARC-08-Simulated-Delivery-Sales.pdf) This module implements a web-based UI to simulate the delivery of parts to the warehouse and the sale of products from the available product stock. It utilizes the inventory/stock API of the web service from the last two modules.
     - Implementing a client that uses the POST method of the web service API
     - Using forms in Node-RED to retrieve and process user input
+9. [**Simulation of Production:**](modules/IoT-Factory-GTARC-09-Simulated-Production.pdf) This module implements a web-based UI to simulate the production in the smart factory, resulting in an increase in product stock values and decrease in the inventory of the associated parts. It also relies on the inventory/stock web service.
+    - Implementing a client that uses a combination of the GET and POST methods of the web service API
+    - Checking for sufficient amount of the required parts for production
+10. [**Dashboard for Monitoring Inventory/Stock status:**](modules/IoT-Factory-GTARC-10-Inventory-Stock-Monitoring.pdf) This module implements a visual dashboard to monitor the number of available parts in the warehouse and products in the stock, utilizing the inventory/stock web service API from the previous modules.
+    - Creating web UI with multiple data series in a single plot
+    - Using bar charts for data visualization 
